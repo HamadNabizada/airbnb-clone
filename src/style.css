@@ -16,13 +16,42 @@ html{
     height: 7rem;
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
-.img-container{
+.header-wrapper>.img-container{
     margin-left:3rem;
     width: 8.2rem;
     height: 2.5rem;
     background-image: url('./logo.png')
 }
-.hero-container{
+.hero-wrapper{
     display:flex;
     flex-direction: column;
+    align-items: left;
+}
+.hero-wrapper>.img-container{
+    background-image: url('./pictureGrid.png');
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 3rem;
+    background-size:contain;
+    height: 23.2rem;
+}
+.hero-wrapper>.hero-text-container{
+    margin-top: 3rem;
+    display:flex;
+    flex-direction: column;
+}
+.hero-text-container>h1{
+    font-weight: 600;
+    font-size:3.6rem;
+    line-height: 4rem;
+    margin-left: 3.6rem;
+}
+.hero-text-container>p{
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-left: 3.6rem;
+    line-height: 1.8rem;
+    width:32rem;
+    margin-top: 1.6rem;
 }

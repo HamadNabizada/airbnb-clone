@@ -4,7 +4,9 @@ import Hero from './Hero'
 
 export default function App(){
     return(
-        <Header />
-        <Hero />
+        <div className="app-container">
+            <Header />
+            <Hero />
+        </div>
     )
 }
