@@ -55,3 +55,76 @@ html{
     width:32rem;
     margin-top: 1.6rem;
 }
+.card-wrapper{
+    display:flex;
+    flex-direction: column;
+}
+.card-top{
+    height: 23.5rem;
+    width: 17.6rem;
+    background-image: url('./katie.png');
+    display:flex;
+    flex-direction: column;
+    border-radius: 9px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.status{
+    background-color: white;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 2px;
+    margin-top: 6px;
+    margin-left: 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 6px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.card-bottom{
+    display:flex;
+    flex-direction: column;
+    margin-top: 9px;
+    width: 17.6rem;
+    height: 5.8rem;
+}
+.card-bottom>span{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    
+}
+.card-bottom>span>.img-container{
+    height:14px;
+    width:14px;
+    background-image: url('./star.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.review-count,.rating,.location,.bulletpoint,.card-bottom>span>.img-container{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 13px;
+    color: #918E9B;
+    margin-right: 4px;
+}
+.rating{
+    color: black;
+}
+.card-title{
+    font-weight: 300;
+    font-size:1.2rem;
+    line-height: 13.2px;
+    margin-top:8px;
+}
+.price{
+    font-weight: 300;
+    font-size:1.2rem;
+    line-height: 13.2px;
+    margin-top:8px;
+}
