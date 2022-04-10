@@ -1,23 +1,24 @@
 import React from 'react'
 
-export default function Card(){
+export default function Card(props){
     return(
+       
         <div className="card-wrapper">
             <div className="card-top">
-                <div className="img-container">                
-                    <div className="status">SOLD OUT</div
-                ></div>
+                <div className="img-container" >                
+                    <div className="status">SOLD OUT</div>
+                </div>
             </div>
             <div className="card-bottom">
                 <span>
-                    <div className="img-container"></div>
-                    <p className="rating">5.0</p>
-                    <p className="review-count">(6)</p>
+                    <div className="img-container"/>
+                    <p className="rating">{props.rating}</p>
+                    <p className="review-count">({props.reviewCount})</p>
                     <p className="bulletpoint">	&#8226;</p>
-                    <p className="location">USA</p>
+                    <p className="location">{props.country}</p>
                 </span>
-                <h2 className="card-title">Life lessons with Katie Zaferes</h2>
-                <h3 className="price"> <strong>From $136</strong>  / person</h3>
+                <h2 className="card-title">{props.title}</h2>
+                <h3 className="price"> <strong>From ${props.price}</strong>  / person</h3>
             </div>
         </div>
     )

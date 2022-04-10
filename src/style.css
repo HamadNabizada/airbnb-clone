@@ -28,13 +28,12 @@ html{
     align-items: left;
 }
 .hero-wrapper>.img-container{
-    background-image: url('./pictureGrid.png');
-    width:100%;
-    background-repeat: no-repeat;
-    background-position: center center;
+    display:flex;
     margin-top: 3rem;
-    background-size:contain;
-    height: 23.2rem;
+    object-fit: contain;
+    max-height:23.2rem;
+    width:100%;
+    
 }
 .hero-wrapper>.hero-text-container{
     margin-top: 3rem;
@@ -58,11 +57,12 @@ html{
 .card-wrapper{
     display:flex;
     flex-direction: column;
+    margin:2rem;
 }
 .card-top{
     height: 23.5rem;
     width: 17.6rem;
-    background-image: url('./katie.png');
+    background-image: url('./images/katie.png');
     display:flex;
     flex-direction: column;
     border-radius: 9px;
@@ -101,7 +101,7 @@ html{
 .card-bottom>span>.img-container{
     height:14px;
     width:14px;
-    background-image: url('./star.png');
+    background-image: url('./images/star.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
