@@ -62,7 +62,6 @@ html{
 .card-top{
     height: 23.5rem;
     width: 17.6rem;
-    background-image: url('./images/katie.png');
     display:flex;
     flex-direction: column;
     border-radius: 9px;
@@ -70,6 +69,7 @@ html{
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .status{
     background-color: white;
     width: 6rem;

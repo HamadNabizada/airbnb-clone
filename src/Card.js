@@ -5,9 +5,8 @@ export default function Card(props){
        
         <div className="card-wrapper">
             <div className="card-top">
-                <div className="img-container" >                
-                    <div className="status">SOLD OUT</div>
-                </div>
+                <img src={`images/${props.coverImg}`} className="img-container" />                
+
             </div>
             <div className="card-bottom">
                 <span>
@@ -15,7 +14,7 @@ export default function Card(props){
                     <p className="rating">{props.rating}</p>
                     <p className="review-count">({props.reviewCount})</p>
                     <p className="bulletpoint">	&#8226;</p>
-                    <p className="location">{props.country}</p>
+                    <p className="location">{props.location}</p>
                 </span>
                 <h2 className="card-title">{props.title}</h2>
                 <h3 className="price"> <strong>From ${props.price}</strong>  / person</h3>
