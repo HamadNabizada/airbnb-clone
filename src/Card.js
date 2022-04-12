@@ -18,8 +18,8 @@ export default function Card(props){
             <div className="card-bottom">
                 <span>
                     <div className="img-container"/>
-                    <p className="rating">{props.rating}</p>
-                    <p className="review-count">({props.reviewCount})</p>
+                    <p className="rating">{props.stats.rating}</p>
+                    <p className="review-count">({props.stats.reviewCount})</p>
                     <p className="bulletpoint">	&#8226;</p>
                     <p className="location">{props.location}</p>
                 </span>
