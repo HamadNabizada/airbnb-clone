@@ -9,6 +9,7 @@ export default function App(){
     let cardElements = data.map(cardObj =>{
         return (
             <Card 
+                key={cardObj.id}
                 title={cardObj.title}
                 reviewCount={cardObj.stats.reviewCount}
                 rating={cardObj.stats.rating}
