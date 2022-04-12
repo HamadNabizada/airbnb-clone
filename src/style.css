@@ -68,6 +68,7 @@ html{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    position:relative;
 }
 
 .status{
@@ -84,6 +85,7 @@ html{
     padding: 5px 6px;
     font-weight: 400;
     font-size: 1rem;
+    position:absolute;
 }
 .card-bottom{
     display:flex;

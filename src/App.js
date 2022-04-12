@@ -16,17 +16,16 @@ export default function App(){
                 location={cardObj.location}
                 price={cardObj.price}
                 coverImg={cardObj.coverImg}
+                openSpots={cardObj.openSpots}
             />
         )
     })
-    console.log(cardElements);
-
     return(
         <div className="app-container">
             <Header />
             <Hero />
             <div className="card-list">
-                {cardElements}       
+                {cardElements}           
             </div>
 
         </div>

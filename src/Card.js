@@ -1,12 +1,19 @@
 import React from 'react'
 
 export default function Card(props){
+    let statusBadge;
+    if(props.openSpots === 0){
+        statusBadge = <div className="status">SOLD OUT</div>
+    } 
+    else if(props.location === 'Online'){
+        statusBadge = <div className="status">ONLINE</div>
+    }
     return(
        
         <div className="card-wrapper">
             <div className="card-top">
                 <img src={`images/${props.coverImg}`} className="img-container" />                
-
+                {statusBadge}
             </div>
             <div className="card-bottom">
                 <span>
