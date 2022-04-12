@@ -24,7 +24,10 @@ export default function App(){
         <div className="app-container">
             <Header />
             <Hero />
-            {cardElements}
+            <div className="card-list">
+                {cardElements}       
+            </div>
+
         </div>
     )
 }
